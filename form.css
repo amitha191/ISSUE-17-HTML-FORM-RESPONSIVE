@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+body{
+    background-color: #8f8f8f;
+}
+/* .border{
+    border: 1px solid red ;
+} */
+
+.main-form{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.header{
+    background-color: #40608e;
+    padding: 10px;
+}
+.header h1, .header p{
+    text-align: center;
+    color: white;
+    font-weight: 400px;
+}
+.star{
+    color: red;
+}
+.field{
+    display: flex;
+    padding: 2%;
+}
+.left{
+    float: right;
+    width: 40%;  
+}
+.right, .right-address{
+    float: left;
+    width: 60%;
+}
+/* {
+    margin-left: 6em;
+} */
+
+.company-address{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.company-address, .address-top{
+    width: 100%;
+}
+.address-top input,.address-bottom{
+    display: flex;
+}
+.right-logo{
+    width: 60%;
+    height: 3em;
+    border: 1px dotted;
+}
+.right-logo p{
+    color:black;
+    align-items: center;
+    padding: 5px;
+}
+.right-logo p:nth-child(1){
+    float: left;
+    margin-top: 0.5em;
+}
+.right-logo p:nth-child(2){
+    float: right;
+    margin-right: 2em;
+}
+.btn{
+    text-align: center;
+}
+#submit{
+    background-color: rgb(19, 142, 219);
+    color: white;
+    padding: 5px 14px; 
+    font-size: 16px;
+}
+.right input[type=text],.right input[type=url],select,textarea{
+    width: 75%;
+    padding: 3px;
+}
+.right-address input, .right-address select{
+    width: 94%;
+    padding: 2px;
+    gap: 2%;
+}
+.right-address span{
+    font-size: 12px;
+    color: #8f8f8f;
+}
+.date{
+    font-size: 14px;
+}
+
+@media screen and (max-width:600px) {
+        .field,.address-bottom{
+            flex-direction: column;
+        }
+        .left input, .right input, .right-address{
+            margin-top: 0.5em;
+        }
+        .left,.right, .right-address{    
+            width: 100%;
+        }
+        .address-bottom input, .address-bottom select{
+            width: 100%;
+        }
+        /* .left, .right{
+            width: 100%;
+        } */
+        .field input[type=text],.field input[type=url], .field select,textarea, .right-logo{
+            width: 90%;
+        }
+        .right input[type=text],select,textarea{
+            margin-top: 2%;
+        }           
+        .company-address{
+            display: block;
+        }
+        
+        
+}
