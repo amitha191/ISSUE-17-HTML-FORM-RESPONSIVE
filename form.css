@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Times New Roman';
+    font-family:'Times New Roman', Times, serif;
 }
 body{
     background-color: #8f8f8f;
@@ -28,6 +28,12 @@ body{
     color: white;
     font-weight: 400px;
 }
+.header h1{
+    font-size: 3em;
+}
+.header p{
+    font-size: 1.2em;
+}
 .star{
     color: red;
 }
@@ -39,9 +45,13 @@ body{
     float: right;
     width: 40%;  
 }
+.left label{
+    font-size: 20px;
+}
 .right, .right-address{
     float: left;
     width: 60%;
+    display: block;
 }
 /* {
     margin-left: 6em;
@@ -58,9 +68,22 @@ body{
 .address-top input,.address-bottom{
     display: flex;
 }
+.override-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.override-div i{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 14px;
+    margin-top: -12px;
+}
 .right-logo{
+    position: relative;
+    z-index: 9;
     width: 60%;
-    height: 3em;
+    height: 3.2em;
     border: 1px dotted;
 }
 .right-logo p{
@@ -68,13 +91,12 @@ body{
     align-items: center;
     padding: 5px;
 }
-.right-logo p:nth-child(1){
-    float: left;
-    margin-top: 0.5em;
-}
-.right-logo p:nth-child(2){
-    float: right;
-    margin-right: 2em;
+#select-file{
+    position: absolute;
+    left: 20px;
+    background-color:red;
+    padding: 4px 60px;
+    opacity: 0;
 }
 .btn{
     text-align: center;
@@ -85,23 +107,37 @@ body{
     padding: 5px 14px; 
     font-size: 16px;
 }
-.right input[type=text],.right input[type=url],select,textarea{
+.right input[type=text],.right input[type=url],.right input[type=date],select,textarea{
     width: 75%;
-    padding: 3px;
+    padding: 6px;
+}
+
+.company-address div input[type=text], .company-address p select{
+    padding: 6px;
 }
 .right-address input, .right-address select{
     width: 94%;
-    padding: 2px;
+    padding: 6px;
     gap: 2%;
 }
 .right-address span{
     font-size: 12px;
     color: #8f8f8f;
 }
+/* .right input[type=date]{
+    opacity: 0;
+} */
+.right i{
+    position: absolute;
+    left: 61%;
+}
 .date{
     font-size: 14px;
 }
-
+.right p{
+    color: red;
+    display: none;
+}
 @media screen and (max-width:600px) {
         .field,.address-bottom{
             flex-direction: column;

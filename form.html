@@ -23,6 +23,7 @@
             </div>
             <div class="right border">
                 <input type="text" id="name" name="name" minlength="5" maxlength="50" required>
+                <p></p>
             </div>
           
         </div>
@@ -33,6 +34,7 @@
             </div>
             <div class="right border">
                 <input type="text" name="Company-name" minlength="5" maxlength="50" required>
+                <p></p>
             </div>
             
         </div>
@@ -119,7 +121,7 @@
             
         </div>
 
-        <div class="field border">
+        <!-- <div class="field border">
             <div class="left border">
                 <label for="logo">Company logo</label>
             </div>
@@ -127,14 +129,29 @@
                 <p>Choose File</p>
                 <p><i class="fa-solid fa-arrow-up-from-bracket" style="background-color:#C1C1C1;padding:80%; border-radius:50%;"></i></p>
             </div>
-        </div>
+        </div> -->
 
+        <div class="field border">
+            <div class="left border">
+                <label for="logo">Company logo</label>
+            </div>
+            <div class="right-logo border">   
+                <div class="override-div">
+                    <p>Choose File</p>
+                    <p><i class="fa-solid fa-arrow-up-from-bracket"></i>
+                     <input type="file" id="select-file">
+                    </p>
+                </div>
+            </div> 
+        </div>
+    
         <div class="field border">
             <div class="left border">
                 <label for="Billing">Billing Cycle<span class="star">*</span></label>
             </div>
             <div class="right border">
-                <input type="text" class="billing-date"  name="Billing-Date" required><i class="fa-solid fa-calendar-days" style="color: red; padding:5px;"></i>
+                <input type="date" class="billing-date"  name="Billing-Date" required>
+                <img src=""
                 <div class="date">dd-MMM-yyyy</div>
             </div>
         </div>
@@ -151,8 +168,10 @@
         <div class="btn">
             <input type="submit" id="submit" value="Submit">
         </div>
-
+        
     </form>
 
 </body>
 </html>
+
+
