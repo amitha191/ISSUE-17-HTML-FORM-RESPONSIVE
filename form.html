@@ -149,11 +149,27 @@
             <div class="left border">
                 <label for="Billing">Billing Cycle<span class="star">*</span></label>
             </div>
-            <div class="right border">
-                <input type="date" class="billing-date"  name="Billing-Date" required>
-                <img src=""
-                <div class="date">dd-MMM-yyyy</div>
+
+            <div class="right border p-relative">
+                <div class="calender">
+                    <input type="text" name="date" id="date">
+                    <img src="calender.jpg" width="35px" height="18px">
+                </div>
+                <div class="calender-child">
+                    <input type="date" class="billing-date" id="billing-date"  name="billing-date">
+                </div>
             </div>
+
+            <!-- <div class="right border">
+               
+                <div class="date-input">
+                    <input type="date" class="billing-date"  name="Billing-Date" required>
+                    <div class="calender-img">
+                        <img src="calender.jpg" width="40px">
+                    </div>
+                </div>
+                <div class="date">dd-MMM-yyyy</div>
+            </div> -->
         </div>
         
         <div class="field border">
@@ -170,6 +186,8 @@
         </div>
         
     </form>
+
+    <script type="text/Javascript" src="validationDate.js"></script>
 
 </body>
 </html>
