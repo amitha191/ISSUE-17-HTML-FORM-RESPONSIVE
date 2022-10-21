@@ -39,14 +39,14 @@ body{
 }
 .field{
     display: flex;
-    padding: 2%;
+    padding: 10px;
 }
 .left{
     float: right;
     width: 40%;  
 }
 .left label{
-    font-size: 20px;
+    font-size: 16px;
 }
 .right, .right-address{
     float: left;
@@ -76,14 +76,14 @@ body{
 .override-div i{
     background-color: #F5F5F5;
     border-radius: 50%;
-    padding: 14px;
-    margin-top: -12px;
+    padding: 12px;
+    margin-top: -10px;
 }
 .right-logo{
     position: relative;
     z-index: 9;
     width: 60%;
-    height: 3.2em;
+    height: 3.6em;
     border: 1px dotted;
 }
 .right-logo p{
@@ -109,7 +109,7 @@ body{
 }
 .right input[type=text],.right input[type=url],.right input[type=date],select,textarea{
     width: 75%;
-    padding: 5px;
+    padding: 3px;
 }
 
 .company-address div input[type=text], .company-address p select{
@@ -117,12 +117,15 @@ body{
 }
 .right-address input, .right-address select{
     width: 94%;
-    padding: 6px;
+    padding: 3px;
     gap: 2%;
 }
 .right-address span{
     font-size: 12px;
     color: #8f8f8f;
+}
+.right-address input {
+    margin-bottom: 10px;
 }
 .date-input input[type=date]{
     opacity: 0;  
@@ -139,7 +142,7 @@ body{
 }
 .calender input[type=text]{
     width: 65%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .calender-child{
     position: absolute;
@@ -188,6 +191,15 @@ body{
         .company-address{
             display: block;
         }
-        
+        #select-file{
+            padding: 0px;
+        }
+        .calender input[type=text]{
+            width: 50%;    
+        }
+        .calender-child {
+            width: 82%;
+            top: 1px;
+        }
         
 }
