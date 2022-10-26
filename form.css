@@ -170,6 +170,14 @@ body{
     color: red;
     display: none;
 }
+@media screen and (min-width: 1024px) {
+    .right-address input, .right-address select {
+        margin-top: 5px;
+    }
+    .field .right select{
+        margin-top: 8px;
+    }
+}
 @media screen and (max-width:600px) {
         .field,.address-bottom{
             flex-direction: column;
